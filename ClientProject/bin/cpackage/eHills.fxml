@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: powderblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cpackage.Controller2">
+   <children>
+      <ListView fx:id="myListView" layoutX="60.0" layoutY="96.0" prefHeight="125.0" prefWidth="231.0" />
+      <TextArea editable="false" prefHeight="39.0" prefWidth="700.0" style="-fx-background-color: plum;" />
+      <Text layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="eHills">
+         <font>
+            <Font name="Symbol" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="616.0" layoutY="5.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: plum;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Symbol" size="14.0" />
+         </font>
+      </Button>
+      <TextArea editable="false" layoutX="77.0" layoutY="48.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="197.0" text="Items up for auction:">
+         <font>
+            <Font name="Symbol" size="18.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="descriptionBox" editable="false" layoutX="400.0" layoutY="270.0" prefHeight="59.0" prefWidth="281.0" text="Select an item to view its description">
+         <font>
+            <Font name="Symbol" size="14.0" />
+         </font></TextArea>
+      <ImageView fx:id="myImage" fitHeight="170.0" fitWidth="170.0" layoutX="452.0" layoutY="87.0" pickOnBounds="true" />
+      <Button layoutX="616.0" layoutY="409.0" mnemonicParsing="false" onAction="#bid" prefHeight="29.0" prefWidth="56.0" style="-fx-background-color: plum;" text="Bid" textFill="WHITE">
+         <font>
+            <Font name="Symbol" size="14.0" />
+         </font></Button>
+      <Text fx:id="productNameBox" layoutX="388.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select an item to view its details:" textAlignment="CENTER" wrappingWidth="303.4700927734375">
+         <font>
+            <Font name="Symbol" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bidAmount" layoutX="400.0" layoutY="409.0" prefHeight="29.0" prefWidth="210.0" promptText="Enter a bid amount" />
+      <Text layoutX="415.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Bid:">
+         <font>
+            <Font name="Symbol" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="415.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy Now For:">
+         <font>
+            <Font name="Symbol" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="currentBidAmount" layoutX="540.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select an item">
+         <font>
+            <Font name="Symbol" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="buyNowAmount" layoutX="540.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select an item">
+         <font>
+            <Font name="Symbol" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="bidStatusMessage" fill="#c667d4" layoutX="400.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="281.00000098347664">
+         <font>
+            <Font name="Symbol" size="14.0" />
+         </font>
+      </Text>
+      <ListView fx:id="auctionHistoryList" layoutX="21.0" layoutY="299.0" prefHeight="178.0" prefWidth="310.0" />
+      <TextArea editable="false" layoutX="100.0" layoutY="251.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="152.0" text="Bidding History:">
+         <font>
+            <Font name="Symbol" size="18.0" />
+         </font>
+      </TextArea>
+      <Polygon fill="PLUM" layoutX="369.0" layoutY="-16.0" points="-40.9893798828125, 44.833335876464844, -24.0, 33.833335876464844, -40.9893798828125, 24.666671752929688" stroke="PLUM" strokeType="INSIDE" />
+      <Button layoutX="324.0" layoutY="7.0" mnemonicParsing="false" onAction="#play" opacity="0.1" prefHeight="17.0" prefWidth="25.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="PLUM" height="21.0" layoutX="360.0" layoutY="9.0" stroke="PLUM" strokeType="INSIDE" width="6.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="PLUM" height="21.0" layoutX="369.0" layoutY="9.0" stroke="PLUM" strokeType="INSIDE" width="6.0" />
+      <Button layoutX="355.0" layoutY="7.0" mnemonicParsing="false" onAction="#pause" opacity="0.1" prefHeight="17.0" prefWidth="25.0" />
+      <Polygon fill="PLUM" layoutX="433.0" layoutY="-16.0" points="-40.9893798828125, 44.833335876464844, -24.0, 33.833335876464844, -40.9893798828125, 24.666671752929688" stroke="PLUM" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="PLUM" height="20.0" layoutX="406.0" layoutY="9.0" stroke="PLUM" strokeType="INSIDE" width="5.0" />
+      <Button layoutX="388.0" layoutY="7.0" mnemonicParsing="false" onAction="#next" opacity="0.1" prefHeight="17.0" prefWidth="25.0" />
+      <Polygon fill="PLUM" layoutX="336.0" layoutY="-16.0" points="-40.9893798828125, 44.833335876464844, -24.0, 33.833335876464844, -40.9893798828125, 24.666671752929688" rotate="180.0" stroke="PLUM" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="PLUM" height="20.0" layoutX="293.0" layoutY="9.0" stroke="PLUM" strokeType="INSIDE" width="5.0" />
+      <Button layoutX="291.0" layoutY="7.0" mnemonicParsing="false" onAction="#previous" opacity="0.1" prefHeight="17.0" prefWidth="25.0" />
+   </children>
+</AnchorPane>
