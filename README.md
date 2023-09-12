@@ -1,4 +1,4 @@
-# ECE-422C-Auction-Site
+# Auction-Site
 
 My auction project is composed of two subprojects: the server project and the client
 project. The server side has its main class, Server, as well as the subclasses Product, User, and
